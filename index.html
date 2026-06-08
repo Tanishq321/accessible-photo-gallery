@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="addTabFocus()">
+
+    <h1>Accessible Interactive Photo Gallery</h1>
+
+    <div id="image">
+        Hover over or focus on an image below to display here.
+    </div>
+
+    <div class="gallery">
+
+        <figure>
+            <img src="images/mountain.jpg"
+                alt="Beautiful mountain landscape during sunrise"
+                onmouseover="upDate(this)"
+                onmouseleave="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+        </figure>
+
+        <figure>
+            <img src="images/ocean.jpg"
+                alt="Ocean waves crashing at sunset"
+                onmouseover="upDate(this)"
+                onmouseleave="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+        </figure>
+
+        <figure>
+            <img src="images/forest.jpg"
+                alt="Green forest filled with sunlight"
+                onmouseover="upDate(this)"
+                onmouseleave="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+        </figure>
+
+        <figure>
+            <img src="images/lake.jpg"
+                alt="Calm lake surrounded by mountains"
+                onmouseover="upDate(this)"
+                onmouseleave="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+        </figure>
+
+        <figure>
+            <img src="images/city.jpg"
+                alt="Modern city skyline at night"
+                onmouseover="upDate(this)"
+                onmouseleave="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+        </figure>
+
+        <figure>
+            <img src="images/stars.jpg"
+                alt="Night sky full of bright stars"
+                onmouseover="upDate(this)"
+                onmouseleave="unDo()"
+                onfocus="upDate(this)"
+                onblur="unDo()">
+        </figure>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
